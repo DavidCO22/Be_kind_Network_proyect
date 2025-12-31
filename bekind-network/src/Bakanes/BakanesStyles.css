@@ -1,0 +1,15 @@
+.bakanes-option{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.bakanes-option.active{
+    font-weight: bold;
+    border-bottom: 3px solid;
+}
+
+.bakanes-outlet{
+    margin-top: 30px;
+}

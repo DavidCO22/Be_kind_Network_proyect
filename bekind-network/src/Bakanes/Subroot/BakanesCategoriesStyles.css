@@ -1,0 +1,390 @@
+.seach-category{
+    height: 30px;
+    border-radius: 5px;
+    width: 22%;
+    margin-right: 40px;
+}
+
+.search-filter{
+    display:flex;
+    align-items: center;
+}
+
+.filter{
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Create-Category-Button{
+    margin-left: auto;
+    padding: 10px;
+    background-color: rgb(7, 7, 88);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CategoryTable.css */
+.category-table-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-label {
+    font-weight: 600;
+    color: #333;
+    min-width: 100px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filters-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-label {
+    font-weight: 600;
+    color: #333;
+    min-width: 120px;
+}
+
+.filter-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+.add-category-btn:hover {
+    background: #45a049;
+}
+
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+}
+
+.category-table th {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #dee2e6;
+    white-space: nowrap;
+    border-right: 1px solid #ccc;
+}
+
+.category-table th:last-child {
+  border-right: none;
+}
+
+.category-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.category-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-name {
+    font-weight: 500;
+}
+
+
+.category-icon {
+    font-size: 24px;
+}
+
+.categoryIcon{
+    height: 25px;
+    background-color: pink;
+    border-radius: 5px;
+}
+
+.status-badge {
+    padding: 4px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.status-badge.active {
+    background: #d4edda;
+    color: #0a8d29;
+    border: 1.5px solid #0a8d29;
+}
+
+.status-badge.inactive {
+    background: #f8d7da;
+    color: #a81927;
+    border: 1.5px solid #a81927;
+}
+
+.description-cell {
+    max-width: 300px;
+    line-height: 1.4;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.results-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.page-select {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.results-count {
+    color: #666;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+}
+
+.page-btn {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #007bff;
+}
+
+.page-btn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 768px) {
+    .table-header {
+        flex-direction: column;
+    }
+    
+    .table-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .pagination {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-contain{
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    width: 380px;
+    box-shadow: 0 14px 30px rgba(0,0,0,.2);
+}
+
+.form-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+.close-btn{
+    width: 45%;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.submit-btn{
+    height: 40px;
+    margin-left: auto;
+    border-radius: 3px;
+    width: 45%;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.category-form input , .category-form textarea{
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.category-form textarea{
+    height: 60px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #ccc;
+    border-radius: 24px;
+    transition: .3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+input:checked + .slider {
+    background: #68bfe7;
+    border: 1px solid #68bfe7;
+}
+
+.slider::before {
+    left: auto;
+    right: 3px;
+}
+
+input:checked + .slider::before {
+    transform: translateX(-22px);
+    background-color: #007bff;
+}
+
+
+
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+input[type="file"] {
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 2px solid #0a0808;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
